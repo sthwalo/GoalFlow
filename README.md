@@ -1,0 +1,2 @@
+# GoalFlow
+Goal Automation Platform
