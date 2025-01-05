@@ -1,10 +1,15 @@
-
-Markdown
-
-
 # GoalFlow
 
 **GoalFlow** is a task management and automation application that helps you organize, prioritize, and automate your goals and objectives.
+{{ ... }}
+## Table of Contents
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
 ## Features
 
@@ -14,19 +19,33 @@ Markdown
     * Track progress and completion status.
 * **Prioritization:**
     * Prioritize tasks based on due dates, priority levels, and dependencies.
-    * Utilizes a [describe your prioritization algorithm here] algorithm.
+    * Utilizes a specific prioritization algorithm.
 * **Automation:**
     * Automate tasks using Python scripts.
     * Schedule recurring tasks and reminders.
-* **Technologies:**
-    * **Database:** PostgreSQL
-    * **Backend:** Java with Spring Boot
-    * **Frontend:** Python with [Flask/Django]
-    * **Automation:** Python with relevant libraries
+
+## Planned Features
+
+### Resume Generation
+- **Description:** This feature will allow users to generate a resume based on tasks that have been marked as completed.
+- **Details:**
+  - The resume will include the following information:
+    - Task Name
+    - Description
+    - Completion Date
+    - Reference Link (if applicable)
+  - **Backend Logic:** A function will query the database for completed tasks and format the information into a structured format suitable for a resume.
+  - **Endpoint:** A new endpoint (e.g., `/generate-resume`) will be created to return the formatted resume to the user.
+  - **Frontend Integration:** A button or link will be added to allow users to generate and download their resume.
+  - **Testing:** The feature will be thoroughly tested to handle edge cases, such as no completed tasks or invalid reference links.
+
+## Technologies
+* **Database:** PostgreSQL
+* **Backend:** Java with Spring Boot
+* **Frontend:** Python with Flask
+* **Automation:** Python with relevant libraries
 
 ## Project Structure
-
-
 
 goalflow/
 ├── backend/               # Java backend (Spring Boot)
@@ -51,7 +70,7 @@ goalflow/
 │   │               └── goalflow/          # Test classes
 │   ├── pom.xml              # Maven project file
 │   └── ...
-├── frontend/              # Python frontend (Flask/Django)
+├── frontend/              # Python frontend (Flask)
 │   ├── app/                # Main application module
 │   │   ├── __init__.py      # Module initialization
 │   │   ├── routes.py       # URL routing and views
@@ -74,22 +93,6 @@ goalflow/
 ├── README.md             # Project documentation
 └── ...
 
-
-Explanation
-backend: Contains the Java backend code.
-Uses a standard Maven project structure.
-Organized into packages for controllers, services, models, etc.
-pom.xml defines project dependencies and build configuration.
-frontend: Contains the Python frontend code.
-Organized into modules and packages for better structure.
-templates stores HTML templates for the user interface.
-static holds CSS, JavaScript, and image files.
-automation: Contains Python scripts for automating tasks.
-You can organize these scripts by task type or functionality.
-database: Stores SQL scripts for database initialization and migrations.
-docker-compose.yml: (Optional) Defines Docker containers for your app components (database, backend, frontend) for easy setup and deployment.
-README.md: Provides essential information about the project, including setup instructions, dependencies, and how to run the app.
-
 ## Getting Started
 
 ### Prerequisites
@@ -98,14 +101,13 @@ README.md: Provides essential information about the project, including setup ins
 * Python 3.x
 * PostgreSQL
 * Maven (for backend)
-* [Virtual environment (recommended for Python)]
+* Virtual environment (recommended for Python)
 
 ### Installation
 
 1. **Clone the repository:**
    ```bash
-   git clone [invalid URL removed]
-
+   git clone [repository URL]
 
 Set up the database:
 Create a PostgreSQL database.
@@ -117,22 +119,17 @@ Run the Spring Boot application: mvn spring-boot:run
 Frontend:
 Navigate to the frontend/ directory.
 Install the required Python packages: pip install -r requirements.txt
-Run the Flask/Django development server: python run.py
+Run the Flask development server: python run.py
 (Optional) Docker:
 If using Docker, build and run the containers using docker-compose up -d
 Usage
-Access the GoalFlow application through your web browser (usually at http://localhost:5000/ for Flask or a similar address for Django).
-Create an account (if required).
-Start adding your goals, objectives, and tasks.
-Set due dates, priorities, and categories.
-Explore the automation features to automate recurring tasks or reminders.
+Access the GoalFlow application through your web browser (usually at http://localhost:5000/ for Flask). Create an account (if required). Start adding your goals, objectives, and tasks. Set due dates, priorities, and categories. Explore the automation features to automate recurring tasks or reminders.
+
 Contributing
 Contributions are welcome! Please feel free to submit issues and pull requests.
+
 License
-[Specify your project license here (e.g., MIT License)]
+This project is licensed under the MIT License
+
 Contact
 Immaculate Nyoni - sthwaloe@gmail.com
-Acknowledgments
-[List any libraries, frameworks, or resources you used]
-
-
